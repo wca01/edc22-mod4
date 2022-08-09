@@ -348,7 +348,7 @@ data:
 
 # Fernet key settings
 # Note: fernetKey can only be set during install, not upgrade
-fernetKey: ~
+fernetKey: "88xbllrpUHXQhu0YwfGZ1KeGOx4aK4qnj4IzqN4-svg="
 fernetKeySecretName: ~
 
 # Flask secret key for Airflow Webserver: `[webserver] secret_key` in airflow.cfg
@@ -881,10 +881,10 @@ webserver:
   defaultUser:
     enabled: true
     role: Admin
-    username: welbboy
-    email: admin@welbboy.org
-    firstName: wel
-    lastName: bboy
+    username: wca
+    email: wca@example.com
+    firstName: wca
+    lastName: wca
     password: admin
 
   # Launch additional containers into webserver.
@@ -1302,7 +1302,7 @@ pgbouncer:
 
 # Configuration for the redis provisioned by the chart
 redis:
-  enabled: false
+  enabled: False
   terminationGracePeriodSeconds: 600
 
   # Create ServiceAccount
@@ -1564,7 +1564,7 @@ dags:
     ## optional subpath for dag volume mount
     subPath: ~
   gitSync:
-    enabled: true
+    enabled: false
 
     # git repo clone url
     # ssh examples ssh://git@github.com/apache/airflow.git
